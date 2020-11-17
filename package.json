@@ -1,10 +1,11 @@
 {
   "name": "aid-reformatter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A formatter plugin for AI Dungeon.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,8 @@
   "homepage": "https://github.com/TheDudeFromCI/aid-reformatter#readme",
   "dependencies": {
     "aid-bundler": "^1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^16.0.2"
   }
 }

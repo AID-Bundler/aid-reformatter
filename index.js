@@ -21,7 +21,7 @@ module.exports = function (options) {
       data.text = '\n\n' + options.textSeparator + data.text
     }
   }
-  
+
   function contextModifier (data) {
     if (options.textSeparator) {
       let lines = data.text.split('\n')
@@ -29,7 +29,7 @@ module.exports = function (options) {
       data.text = lines.join('\n')
     }
   }
-  
+
   function outputModifier (data) {
     formatWhitespace(data, true)
   }
