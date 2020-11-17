@@ -1,0 +1,30 @@
+{
+  "name": "aid-reformatter",
+  "version": "0.0.1",
+  "description": "A formatter plugin for AI Dungeon.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheDudeFromCI/aid-reformatter.git"
+  },
+  "keywords": [
+    "ai",
+    "aid",
+    "dungeon",
+    "helper",
+    "formatter",
+    "plugin"
+  ],
+  "author": "TheDudeFromCI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheDudeFromCI/aid-reformatter/issues"
+  },
+  "homepage": "https://github.com/TheDudeFromCI/aid-reformatter#readme",
+  "dependencies": {
+    "aid-bundler": "^1.1.1"
+  }
+}
