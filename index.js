@@ -34,5 +34,5 @@ module.exports = function (options) {
     formatWhitespace(data, true)
   }
 
-  return new Plugin('Formatter', inputModifier, contextModifier, outputModifier)
+  return new Plugin('Reformatter', inputModifier, contextModifier, outputModifier)
 }
