@@ -16,10 +16,18 @@ module.exports = function (options) {
 
   function inputModifier (data) {
     formatWhitespace(data, false)
+
+    if (data.history.length > 0 && options.textSeparator) {
+      data.text = '\n\n' + options.textSeparator + data.text
+    }
   }
   
   function contextModifier (data) {
-    // Passthrough
+    if (options.textSeparator) {
+      let lines = data.text.split('\n')
+      lines = lines.filter(line => line !== options.textSeparator)
+      data.text = lines.join('\n')
+    }
   }
   
   function outputModifier (data) {
